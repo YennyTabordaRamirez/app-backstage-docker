@@ -12,7 +12,7 @@ spec:
   owner: john@example.com
   lifecycle: experimental
 
-apiVersion: backstage.io/v1alpha1
+apiVersion: backstage.io/v2alpha1
 kind: Component
 metadata:
   name: ApoimentsApplication
