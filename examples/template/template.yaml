@@ -1,13 +1,25 @@
+# apiVersion: scaffolder.backstage.io/v1beta3
+# # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
+# kind: Template
+# metadata:
+#   name: example-nodejs-template
+#   title: Example Node.js Template
+#   description: An example template for the scaffolder that creates a simple Node.js service
+# spec:
+#   owner: user:guest
+#   type: service
+
 apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: example-nodejs-template
-  title: Example Node.js Template
-  description: An example template for the scaffolder that creates a simple Node.js service
+  name: example-microservice-template
+  title: Example microservice Template
+  description: An example template for the scaffolder that creates a simple microservice service
 spec:
   owner: user:guest
   type: service
+
 
   # These parameters are used to generate the input form in the frontend, and are
   # used to gather input data for the execution of the template.
