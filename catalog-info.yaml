@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: app-backstage-docker
+  description: An example of a Backstage application.
+  # Example for optional annotations
+  # annotations:
+  #   github.com/project-slug: backstage/backstage
+  #   backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  owner: john@example.com
+  lifecycle: experimental
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ApoimentsApplication
+  description: Microservicio de citas de laboratorio. Contiene un backstage.yaml para la configuración y exposición del microservicio a través de un template en un Backstage
+  owner: YennyTabordaRamirez
+  lifecycle: experimental
+#  tags:
+#    - tag1
+#    - tag2
