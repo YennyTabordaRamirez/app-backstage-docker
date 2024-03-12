@@ -85,8 +85,9 @@ catalog:
   locations:
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: file
-      target: https://github.com/YennyTabordaRamirez/app-backstage-docker/blob/master/catalog-info.yaml
-      #../../examples/entities.yaml
+      target: ../../examples/entities.yaml
+      #https://github.com/YennyTabordaRamirez/app-backstage-docker/blob/master/catalog-info.yaml
+      
 
     # Local example template
     - type: file

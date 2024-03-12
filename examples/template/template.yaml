@@ -9,7 +9,7 @@ spec:
   owner: user:guest
   type: service
 
-apiVersion: scaffolder.backstage.io/v1beta3
+apiVersion: scaffolder.backstage.io/v2beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
@@ -17,7 +17,7 @@ metadata:
   title: Example microservice Template
   description: An example template for the scaffolder that creates a simple microservice service
 spec:
-  owner: user:guest
+  owner: YennyTabordaRamirez
   type: service
 
 
