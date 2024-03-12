@@ -31,7 +31,7 @@ spec:
 apiVersion: backstage.io/v3alpha1
 kind: Component
 metadata:
-  name: Citas de Laboratorio
+  name: LaboratoryApoimentsApp
   description: Microservicio con SrpingBoot.
   owner: YennyTabordaRamirez
   lifecycle: experimental
