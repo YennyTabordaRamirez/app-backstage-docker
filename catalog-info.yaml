@@ -25,3 +25,17 @@ spec:
   type: service
   owner: YennyTabordaRamirez
   lifecycle: experimental
+
+---
+
+apiVersion: backstage.io/v3alpha1
+kind: Component
+metadata:
+  name: Citas de Laboratorio
+  description: Microservicio con SrpingBoot.
+  owner: YennyTabordaRamirez
+  lifecycle: experimental
+spec:
+  type: service
+  owner: YennyTabordaRamirez
+  lifecycle: experimental
