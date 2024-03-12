@@ -12,6 +12,8 @@ spec:
   owner: Yennytr@example.com
   lifecycle: experimental
 
+---
+
 apiVersion: backstage.io/v2alpha1
 kind: Component
 metadata:
@@ -21,5 +23,5 @@ metadata:
   lifecycle: experimental
 spec:
   type: service
-  owner: user:guest
+  owner: YennyTabordaRamirez
   lifecycle: experimental
