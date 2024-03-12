@@ -20,6 +20,6 @@ metadata:
   owner: YennyTabordaRamirez
   lifecycle: experimental
 spec:
-  type: website
-  owner: Yenny.Yurani.Taborda@ibm.com
+  type: service
+  owner: user:guest
   lifecycle: experimental
