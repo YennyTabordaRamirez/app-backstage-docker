@@ -19,9 +19,6 @@ metadata:
   description: Microservicio de citas de laboratorio. Contiene un backstage.yaml para la configuración y exposición del microservicio a través de un template en un Backstage
   owner: YennyTabordaRamirez
   lifecycle: experimental
-#  tags:
-#    - tag1
-#    - tag2
 spec:
   type: website
   owner: Yenny.Yurani.Taborda@ibm.com
