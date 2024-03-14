@@ -2310,6 +2310,23 @@
     openapi-merge "^1.3.2"
     openapi3-ts "^3.1.2"
 
+"@backstage/backend-openapi-utils@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.npmjs.org/@backstage/backend-openapi-utils/-/backend-openapi-utils-0.1.6.tgz#b7a37003bf78abd8b02b6cba5c6450dcf5e8a2df"
+  integrity sha512-bCpXyEOa2SAOo9pU2Yux17rD5VQeXkW1Xp++8LzkuFgWet8SZNq9zZTF06LRjzrXcVcj2RenCXvdia6k8y1VFw==
+  dependencies:
+    "@backstage/backend-plugin-api" "^0.6.13"
+    "@backstage/errors" "^1.2.3"
+    "@types/express" "^4.17.6"
+    "@types/express-serve-static-core" "^4.17.5"
+    express "^4.17.1"
+    express-openapi-validator "^5.0.4"
+    express-promise-router "^4.1.0"
+    json-schema-to-ts "^2.6.2"
+    lodash "^4.17.21"
+    openapi-merge "^1.3.2"
+    openapi3-ts "^3.1.2"
+
 "@backstage/backend-plugin-api@^0.6.12":
   version "0.6.12"
   resolved "https://registry.npmjs.org/@backstage/backend-plugin-api/-/backend-plugin-api-0.6.12.tgz#7e32cb019dc11258e985784fcb8e7f37f1b846f4"
@@ -3108,6 +3125,51 @@
     yn "^4.0.0"
     zod "^3.22.4"
 
+"@backstage/plugin-catalog-backend@^1.17.3":
+  version "1.17.3"
+  resolved "https://registry.npmjs.org/@backstage/plugin-catalog-backend/-/plugin-catalog-backend-1.17.3.tgz#6febf9b59e15076f5f8cfaaa1c691c6b2fe23200"
+  integrity sha512-lWI89hv5qRcs7ChNpamTtfoxSkOgpcCCQfGU2JoA6T3LOBnvOnFu1pZeJInsb8IkKai68V22G/HiuwFLHfhY1w==
+  dependencies:
+    "@backstage/backend-common" "^0.21.3"
+    "@backstage/backend-openapi-utils" "^0.1.6"
+    "@backstage/backend-plugin-api" "^0.6.13"
+    "@backstage/backend-tasks" "^0.5.18"
+    "@backstage/catalog-client" "^1.6.0"
+    "@backstage/catalog-model" "^1.4.4"
+    "@backstage/config" "^1.1.1"
+    "@backstage/errors" "^1.2.3"
+    "@backstage/integration" "^1.9.0"
+    "@backstage/plugin-auth-node" "^0.4.8"
+    "@backstage/plugin-catalog-common" "^1.0.21"
+    "@backstage/plugin-catalog-node" "^1.7.3"
+    "@backstage/plugin-events-node" "^0.2.22"
+    "@backstage/plugin-permission-common" "^0.7.12"
+    "@backstage/plugin-permission-node" "^0.7.24"
+    "@backstage/plugin-search-backend-module-catalog" "^0.1.17"
+    "@backstage/repo-tools" "^0.6.3"
+    "@backstage/types" "^1.1.1"
+    "@opentelemetry/api" "^1.3.0"
+    "@types/express" "^4.17.6"
+    codeowners-utils "^1.0.2"
+    core-js "^3.6.5"
+    express "^4.17.1"
+    fast-json-stable-stringify "^2.1.0"
+    fs-extra "^11.2.0"
+    git-url-parse "^14.0.0"
+    glob "^7.1.6"
+    knex "^3.0.0"
+    lodash "^4.17.21"
+    luxon "^3.0.0"
+    minimatch "^5.0.0"
+    node-fetch "^2.6.7"
+    p-limit "^3.0.2"
+    prom-client "^15.0.0"
+    uuid "^8.0.0"
+    winston "^3.2.1"
+    yaml "^2.0.0"
+    yn "^4.0.0"
+    zod "^3.22.4"
+
 "@backstage/plugin-catalog-common@^1.0.21":
   version "1.0.21"
   resolved "https://registry.npmjs.org/@backstage/plugin-catalog-common/-/plugin-catalog-common-1.0.21.tgz#1dba78e151079cab0137158b71427276799d4104"
@@ -3183,6 +3245,20 @@
     "@backstage/plugin-permission-node" "^0.7.23"
     "@backstage/types" "^1.1.1"
 
+"@backstage/plugin-catalog-node@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.npmjs.org/@backstage/plugin-catalog-node/-/plugin-catalog-node-1.7.3.tgz#a7369ed5bebddd82adb7417b86f1670a1a9f14d8"
+  integrity sha512-Y6DgN2PSdUMndWjx+a8Vm6AU7NS40hzgbDfeVR50rRNMhL4g3SyTXKgiSxiijdl6eRnnUHaqt+ux5/iy/B7jCQ==
+  dependencies:
+    "@backstage/backend-plugin-api" "^0.6.13"
+    "@backstage/catalog-client" "^1.6.0"
+    "@backstage/catalog-model" "^1.4.4"
+    "@backstage/errors" "^1.2.3"
+    "@backstage/plugin-catalog-common" "^1.0.21"
+    "@backstage/plugin-permission-common" "^0.7.12"
+    "@backstage/plugin-permission-node" "^0.7.24"
+    "@backstage/types" "^1.1.1"
+
 "@backstage/plugin-catalog-react@^1.10.0":
   version "1.10.0"
   resolved "https://registry.npmjs.org/@backstage/plugin-catalog-react/-/plugin-catalog-react-1.10.0.tgz#5c0bab60bd2bf854f4778c111e1f06e2db8ae881"
@@ -3252,6 +3328,13 @@
   integrity sha512-r6atLesi3DoLlS7nUY1fauwrR/7mxUxGgLmXUImXhakwqoJGBaqU1QeuKJTkVcE0WZKMSyHmrDFBsEVzCtgiQw==
   dependencies:
     "@backstage/backend-plugin-api" "^0.6.12"
+
+"@backstage/plugin-events-node@^0.2.22":
+  version "0.2.22"
+  resolved "https://registry.npmjs.org/@backstage/plugin-events-node/-/plugin-events-node-0.2.22.tgz#cbe0179b2b9aee72d87f8b44b2b3899412392fce"
+  integrity sha512-DY8M0FvrEBOU06V4eW+ZMTpMhNJSU2UqGvZmNaeYo4DpT4YIqHzCdlV1yAFKul8QXdat+sfgg0uPMazKdeX37g==
+  dependencies:
+    "@backstage/backend-plugin-api" "^0.6.13"
 
 "@backstage/plugin-github-actions@^0.6.11":
   version "0.6.11"
@@ -3679,6 +3762,24 @@
     "@backstage/plugin-search-backend-node" "^1.2.16"
     "@backstage/plugin-search-common" "^1.2.10"
 
+"@backstage/plugin-search-backend-module-catalog@^0.1.17":
+  version "0.1.17"
+  resolved "https://registry.npmjs.org/@backstage/plugin-search-backend-module-catalog/-/plugin-search-backend-module-catalog-0.1.17.tgz#08d40a2d835e692f251848be35a26018905df737"
+  integrity sha512-jub18QOx/b05Gf2KhZcjGCZG64+u4V23tf3QUzeFqsFGVU6R7wBQCVuNavSWc7At7xxXv7O6Pv4qPMyGccU8Vg==
+  dependencies:
+    "@backstage/backend-common" "^0.21.3"
+    "@backstage/backend-plugin-api" "^0.6.13"
+    "@backstage/backend-tasks" "^0.5.18"
+    "@backstage/catalog-client" "^1.6.0"
+    "@backstage/catalog-model" "^1.4.4"
+    "@backstage/config" "^1.1.1"
+    "@backstage/errors" "^1.2.3"
+    "@backstage/plugin-catalog-common" "^1.0.21"
+    "@backstage/plugin-catalog-node" "^1.7.3"
+    "@backstage/plugin-permission-common" "^0.7.12"
+    "@backstage/plugin-search-backend-node" "^1.2.17"
+    "@backstage/plugin-search-common" "^1.2.10"
+
 "@backstage/plugin-search-backend-module-pg@^0.5.19":
   version "0.5.21"
   resolved "https://registry.npmjs.org/@backstage/plugin-search-backend-module-pg/-/plugin-search-backend-module-pg-0.5.21.tgz#4bcf68ce550faa27c910488e64307337ee17d623"
@@ -3724,6 +3825,25 @@
     "@backstage/backend-common" "^0.21.2"
     "@backstage/backend-plugin-api" "^0.6.12"
     "@backstage/backend-tasks" "^0.5.17"
+    "@backstage/config" "^1.1.1"
+    "@backstage/errors" "^1.2.3"
+    "@backstage/plugin-permission-common" "^0.7.12"
+    "@backstage/plugin-search-common" "^1.2.10"
+    "@types/lunr" "^2.3.3"
+    lodash "^4.17.21"
+    lunr "^2.3.9"
+    ndjson "^2.0.0"
+    uuid "^8.3.2"
+    winston "^3.2.1"
+
+"@backstage/plugin-search-backend-node@^1.2.17":
+  version "1.2.17"
+  resolved "https://registry.npmjs.org/@backstage/plugin-search-backend-node/-/plugin-search-backend-node-1.2.17.tgz#896bfc1f524bc6c0892e4ce8e08b0bde86159693"
+  integrity sha512-3Uq3qlv14gLpDspksuCAL5jQHhnavFNQq03Ub+o2RZhcXBrBf2U+IdF/4p7lpbUdff0SkcUj4O48wLBN+JPayg==
+  dependencies:
+    "@backstage/backend-common" "^0.21.3"
+    "@backstage/backend-plugin-api" "^0.6.13"
+    "@backstage/backend-tasks" "^0.5.18"
     "@backstage/config" "^1.1.1"
     "@backstage/errors" "^1.2.3"
     "@backstage/plugin-permission-common" "^0.7.12"
@@ -3988,6 +4108,43 @@
     "@apidevtools/swagger-parser" "^10.1.0"
     "@apisyouwonthate/style-guide" "^1.4.0"
     "@backstage/backend-common" "^0.21.2"
+    "@backstage/catalog-model" "^1.4.4"
+    "@backstage/cli-common" "^0.1.13"
+    "@backstage/cli-node" "^0.2.3"
+    "@backstage/errors" "^1.2.3"
+    "@manypkg/get-packages" "^1.1.3"
+    "@microsoft/api-documenter" "^7.22.33"
+    "@microsoft/api-extractor" "^7.36.4"
+    "@openapitools/openapi-generator-cli" "^2.7.0"
+    "@stoplight/spectral-core" "^1.18.0"
+    "@stoplight/spectral-formatters" "^1.1.0"
+    "@stoplight/spectral-functions" "^1.7.2"
+    "@stoplight/spectral-parsers" "^1.0.2"
+    "@stoplight/spectral-rulesets" "^1.18.0"
+    "@stoplight/spectral-runtime" "^1.1.2"
+    "@stoplight/types" "^14.0.0"
+    chalk "^4.0.0"
+    codeowners-utils "^1.0.2"
+    commander "^12.0.0"
+    fs-extra "^11.2.0"
+    glob "^8.0.3"
+    is-glob "^4.0.3"
+    js-yaml "^4.1.0"
+    lodash "^4.17.21"
+    minimatch "^5.1.1"
+    p-limit "^3.0.2"
+    portfinder "^1.0.32"
+    ts-node "^10.0.0"
+    yaml-diff-patch "^2.0.0"
+
+"@backstage/repo-tools@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.npmjs.org/@backstage/repo-tools/-/repo-tools-0.6.3.tgz#209eeb5dfb49b6e2014ed3d215672507a7b0be43"
+  integrity sha512-4xBQ10uV6ojIZZYmokYH8vRCegQTudVFcciXJ/wrIhWSzNUZMay1eq6RGiKPFyTz8vzulDpi0xL2SeaDvZ9OQw==
+  dependencies:
+    "@apidevtools/swagger-parser" "^10.1.0"
+    "@apisyouwonthate/style-guide" "^1.4.0"
+    "@backstage/backend-common" "^0.21.3"
     "@backstage/catalog-model" "^1.4.4"
     "@backstage/cli-common" "^0.1.13"
     "@backstage/cli-node" "^0.2.3"
@@ -9912,6 +10069,7 @@ anymatch@^3.0.3, anymatch@~3.1.2:
     "@backstage/app-defaults" "^1.5.0"
     "@backstage/catalog-model" "^1.4.4"
     "@backstage/cli" "^0.25.2"
+    "@backstage/config" "^1.1.1"
     "@backstage/core-app-api" "^1.12.0"
     "@backstage/core-components" "^0.14.0"
     "@backstage/core-plugin-api" "^1.9.0"
